@@ -1,0 +1,73 @@
+/* root styling */
+
+:root {
+  --nav-font-color: #CCCCCC;
+  --sec-font-color: #1F1F1F; 
+  --bottom-font-color: #0B27C5;
+}
+
+
+/* globals */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* top nav container */
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #2D2D2D;
+  display: flex;  
+  flex-direction: row;
+  width: 100%;
+  height: 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* nav link behavior */
+
+/* nav link container */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
+
+/* nav link anchor tags */
+.nav-links a {
+  display: flex;
+  flex-direction: row;
+  color: var(--nav-font-color);
+}
+
+/* user sign in / settings menu in nav right */
+.user {
+  position: fixed;
+  top:0;
+  right: 3em;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  align-self: center;
+  margin-top: .3em; 
+}
+
+.user a {
+  color: var(--nav-font-color);
+}
+
