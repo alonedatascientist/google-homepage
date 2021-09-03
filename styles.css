@@ -4,6 +4,7 @@
   --nav-font-color: #CCCCCC;
   --sec-font-color: #1F1F1F; 
   --bottom-font-color: #0B27C5;
+  --nav-bar-bg: #2D2D2D;
 }
 
 
@@ -30,7 +31,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #2D2D2D;
+  background-color: var(--nav-bar-bg);
   display: flex;  
   flex-direction: row;
   width: 100%;
@@ -45,7 +46,6 @@ a {
 .nav-links {
   display: flex;
   flex-direction: row;
-  border: 1px solid red;
 }
 
 /* nav link anchor tags */
@@ -53,21 +53,111 @@ a {
   display: flex;
   flex-direction: row;
   color: var(--nav-font-color);
+  padding: .4em;
 }
 
 /* user sign in / settings menu in nav right */
 .user {
   position: fixed;
   top:0;
-  right: 3em;
+  right: 1em;
   display: flex;
   flex-direction: row;
-  border: 1px solid red;
   align-self: center;
   margin-top: .3em; 
 }
 
 .user a {
   color: var(--nav-font-color);
+  padding: .4em;
 }
 
+.cog {
+  color: var(--nav-font-color);
+}
+
+.main-container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* flex-direction: row; */
+  height: 70vh;
+  width: 100%;
+}
+
+
+#logo-img {
+  position: relative;
+  align-items: center;
+  /* border: 1px solid blue; */
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+
+#search-bar {
+  width: 45%;
+  line-height: 2.4em;
+  box-shadow: .2em .2em var(--nav-font-color);
+}
+
+.btn-wrap {
+  margin-top: -1.5em;
+}
+
+#search-btn {
+  padding: .6em;
+}
+
+#lucky-btn {
+  padding: .6em;
+}
+
+.side-links {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* border: 1px solid red; */
+  left: 15em;
+  top: -2em;
+}
+
+.side-links li {
+  position: relative;
+  display: flex;
+}
+
+.side-links li a {
+  flex-direction: column;
+  position: relative;
+  left: 10em;
+}
+
+.bottom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  height: inherit;
+  /* height: 2em; */
+}
+
+.bottom-nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4em;
+}
+
+.bottom-nav ul li a {
+  justify-content: space-between;
+  padding-right: 1.5em;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid red; */
+  justify-content: center;
+  margin-top: 2em;
+}
