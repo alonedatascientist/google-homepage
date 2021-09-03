@@ -116,6 +116,8 @@ a {
   width: 45%;
   line-height: 2.4em;
   box-shadow: .2em .2em var(--nav-font-color);
+  outline: none;
+  color: var(--nav-bar-bg);
 }
 
 .btn-wrap {
