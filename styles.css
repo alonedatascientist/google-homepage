@@ -3,7 +3,7 @@
 :root {
   --nav-font-color: #CCCCCC;
   --sec-font-color: #1F1F1F; 
-  --bottom-font-color: #0B27C5;
+  --bottom-nav-color: #0623C4;
   --nav-bar-bg: #2D2D2D;
 }
 
@@ -56,6 +56,13 @@ a {
   padding: .4em;
 }
 
+
+.nav-links a:hover {
+  color: black;
+  background: white;
+}
+
+
 /* user sign in / settings menu in nav right */
 .user {
   position: fixed;
@@ -70,6 +77,15 @@ a {
 .user a {
   color: var(--nav-font-color);
   padding: .4em;
+}
+
+/* .user a:hover {
+  color: white;
+} */
+
+.user a:hover {
+  background: white;
+  color: black;
 }
 
 .cog {
@@ -132,6 +148,7 @@ a {
   flex-direction: column;
   position: relative;
   left: 10em;
+  color: var(--bottom-nav-color);
 }
 
 .bottom-nav {
@@ -152,6 +169,7 @@ a {
 .bottom-nav ul li a {
   justify-content: space-between;
   padding-right: 1.5em;
+  color: var(--bottom-nav-color)
 }
 
 footer {
@@ -160,4 +178,8 @@ footer {
   /* border: 1px solid red; */
   justify-content: center;
   margin-top: 2em;
+}
+
+footer a {
+  color: var(--bottom-nav-color);
 }
